@@ -8,8 +8,8 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ClientService {
-  url: string = environment.baseUrl + "client/";
-  get_clients:string = "getAll";
+  url: string = environment.baseUrl + "client";
+  get_clients:string = "";
   create_client:string = "add";
 
   constructor(public http: HttpClient) { }
