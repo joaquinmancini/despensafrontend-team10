@@ -2,14 +2,15 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from "rxjs";
 import { Client } from 'src/app/models/client/client.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClientService {
-  url: string = "http://localhost:8080/client";
-  get_clients:string = "/getAll";
-  create_client:string = "/add";
+  url: string = environment.baseUrl + "client/";
+  get_clients:string = "getAll";
+  create_client:string = "add";
 
   constructor(public http: HttpClient) { }
 
