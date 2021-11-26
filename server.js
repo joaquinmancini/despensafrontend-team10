@@ -3,9 +3,9 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname+'/dist/despensafrontend-team10'));
+app.use(express.static(__dirname+'/dist/despensaF'));
 app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/dist/despensafrontend-team10/index.html'));
+    res.sendFile(path.join(__dirname+'/dist/despensaF/index.html'));
 });
 
 app.listen(process.env.PORT || 8080);
