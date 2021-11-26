@@ -1,0 +1,24 @@
+<div class="container">
+    <h3>Nuevo producto</h3>
+    <form [formGroup]="formInstance">
+      <div class="mb-3">
+        <input id="name" class="form-control" type="text" placeholder="nombre" aria-label="input example" required
+          name="name" formControlName="name">
+      </div>
+      <div class="mb-3">
+        <textarea id="descripcion" class="form-control" type="text" placeholder="descripcion" aria-label="input example"
+          name="description" formControlName="description"></textarea>
+      </div>
+      <div class="mb-3">
+        <input id="quantity" class="form-control" type="number" name="quantity" formControlName="quantity">
+      </div>
+      <!-- <div class="mb-3">
+        <input id="weight" class="form-control" type="hidden" value="0" formControlName="weight">
+      </div> -->
+      <div class="d-block gap-2">
+        <button class="btn btn-success col-5" type="button" [disabled]="!formInstance.valid" (click)="saveProduct()">Confirmar</button>
+        <button class="btn btn-danger offset-2 col-5" type="button" (click)="onNoClick()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+  

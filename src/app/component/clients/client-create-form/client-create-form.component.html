@@ -1,0 +1,17 @@
+<div class="container">
+    <h3>Nuevo cliente</h3>
+    <form [formGroup]="formInstance">
+      <div class="mb-3">
+        <input id="name" class="form-control" type="text" placeholder="nombre" aria-label="input example" required
+          name="name" formControlName="name">
+      </div>
+      <!-- <div class="mb-3">
+        <input id="weight" class="form-control" type="hidden" value="0" formControlName="weight">
+      </div> -->
+      <div class="d-block gap-2">
+        <button class="btn btn-success col-5" type="button" [disabled]="!formInstance.valid" (click)="saveClient()">Confirmar</button>
+        <button class="btn btn-danger offset-2 col-5" type="button" (click)="onNoClick()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+  

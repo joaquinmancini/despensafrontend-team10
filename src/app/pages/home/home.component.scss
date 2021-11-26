@@ -1,0 +1,22 @@
+.img-categories {
+  width: 550px;
+  height: 250px;
+  object-fit: cover;
+}
+
+a.categories {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+a.categories:hover {
+  color: rgb(12, 73, 82);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
